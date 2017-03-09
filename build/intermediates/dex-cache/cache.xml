@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_774fcc06e4f83c8b55db296c61f1882be494dbe7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_bde2772c36003bc00afc523ef554b7a927dc5d79\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_dc1322c128290d3b5d8473a2069c8f99867426fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ext.jeremy.li\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_f3f003cec0b22a9b8da7b64162d21c5be8531dc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_e65e555a8be04f2f1f905dd1ba2e138df5dadd4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_4553de6ca70ae2ca0c2f8cac1ccbc0c57c27c26c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_86bcebab2f18817df097fc083b5a39d29b533958\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Java\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_f5e3ac27a1ab5477a39b76276dde86b5b2b5b544\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_5b3d130ac22cd1a6af9c00217b999584cd1dc63b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2cce8bda2e5884d399744e97fd00c499f323e81a">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7e486ee5e7e9742f414dc885dd521c8c5b9296b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ext.jeremy.li\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.4.0_3f025ff5fe98131a11bcf801c950e974aa671af8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_9c17b2e699a160be6118ec29f5a86f08fa2c8df0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ext.jeremy.li\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.4.0_485665db6666de2256726c4dd583c2d5ba8c6645\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf8e0e59d4640e2d94cf73f947efd349fe4e865c">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1de34062c9a202003b176ff77a94ef9399db021a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\dann_jiang\CommandLibDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="E:\dann_jiang\CommandLibDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_76da287d76cc3993e980a6a3f08ef235821c5375\classes.dex" />
+    </item>
+
+</items>

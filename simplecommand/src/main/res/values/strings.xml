@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SimpleCommad</string>
+    <string name="preference_key_wifi_only">preference_key_wifi_only</string>
+</resources>
