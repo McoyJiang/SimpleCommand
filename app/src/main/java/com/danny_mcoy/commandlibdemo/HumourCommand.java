@@ -6,7 +6,9 @@ import android.os.Parcel;
 
 import com.danny_mcoy.simplecommad.cmd.network.NetworkCommand;
 import com.danny_mcoy.simplecommad.log.Logger;
-import com.squareup.okhttp.Request;
+
+import okhttp3.Request;
+//import com.squareup.okhttp.Request;
 
 /**
  * Created by Danny_姜新星 on 3/8/2017.

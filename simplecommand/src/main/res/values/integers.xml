@@ -2,4 +2,6 @@
 <resources>
     <integer name="connection_timeout">60</integer>
     <integer name="read_timeout">60</integer>
+    <integer name="image_loader_connection_timeout">60</integer>
+    <integer name="image_loader_read_timeout">60</integer>
 </resources>

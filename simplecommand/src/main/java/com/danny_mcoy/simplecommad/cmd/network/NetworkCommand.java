@@ -13,9 +13,6 @@ import com.danny_mcoy.simplecommad.extra.CommandStatus;
 import com.danny_mcoy.simplecommad.extra.Params;
 import com.danny_mcoy.simplecommad.log.Logger;
 import com.danny_mcoy.simplecommad.storage.Storage;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,6 +21,14 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URLConnection;
 import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
+//import com.squareup.okhttp.OkHttpClient;
+//import com.squareup.okhttp.Request;
+//import com.squareup.okhttp.Response;
 
 /**
  * Created by Danny_姜新星 on 3/8/2017.
@@ -58,8 +63,8 @@ public abstract class NetworkCommand extends Command {
         super.execute(context, resultReceiver);
 
         OkHttpClient client = new OkHttpClient();
-        client.setConnectTimeout(context.getResources().getInteger(R.integer.connection_timeout), TimeUnit.SECONDS);
-        client.setReadTimeout(context.getResources().getInteger(R.integer.read_timeout), TimeUnit.SECONDS);
+        client.newBuilder().connectTimeout(context.getResources().getInteger(R.integer.connection_timeout), TimeUnit.SECONDS);
+        client.newBuilder().readTimeout(context.getResources().getInteger(R.integer.read_timeout), TimeUnit.SECONDS);
 
         try {
             if (isNetworkAvailable(context)) {
