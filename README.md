@@ -4,6 +4,8 @@
 
 [2.图片下载](https://github.com/McoyJiang/SimpleCommand/blob/master/docs/2.%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD.md)
 
+[3.ImageLoader的API详细介绍](https://github.com/McoyJiang/SimpleCommand/blob/master/docs/3.ImageLoader%E7%9A%84API%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D.md)
+
 <br>
 ## 简介:
 SimpleCommand是一款轻量级框架。框架很小也很容易理解。使用这款框架能实现的功能主要是快速集成网络请求、图片请求、文件操作等各种比较耗时的操作。对于网络图图片请求，内部使用的是OkHttp实现
