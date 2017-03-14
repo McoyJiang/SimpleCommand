@@ -1,5 +1,7 @@
 package com.danny_mcoy.simplecommad.extra;
 
+import okhttp3.MediaType;
+
 /**
  * Created by Danny_姜新星 on 3/8/2017.
  */
@@ -24,6 +26,7 @@ public class Params {
             // hidden
         }
 
+        public static final String CMD_CODE = NAMESPACE.concat(".CMD_CODE");
         public static final String EXTRA_BODY = NAMESPACE.concat(".EXTRA_BODY");
         public final static String EXTRA_CMD = NAMESPACE.concat(".EXTRA_CMD");
         public final static String EXTRA_STATUS = NAMESPACE.concat(".EXTRA_STATUS");
@@ -76,5 +79,53 @@ public class Params {
             public final static String CREATOR_NAME = ".CREATOR_NAME";
         }
 
+    }
+
+    /**
+     * 在上传UploadCommand中使用
+     */
+    public static class Headers {
+        private Headers() {
+            // hidden
+        }
+
+        public final static String CONTENT_TYPE = "Content-type";
+        public final static String CHARSET = "Charset";
+        public final static String ACCEPT = "Accept";
+        public final static String TOKEN = "";
+        public final static String X_AMZ_META_MD5HASH = "x-amz-meta-md5hash";
+        public final static String PREPARE_ONLY = "PrepareOnly";
+        public final static String MEDIA_LIST = "MediaList";
+
+        public final static String CONTENT_TYPE_JSON = "application/json";
+        public final static String CONTENT_TYPE_IMAGE = "image/png";
+        public final static String CONTENT_TYPE_VIDEO = "video/mp4";
+
+        public final static String CHARSET_UTF_8 = "utf-8";
+
+    }
+
+    public static class Body {
+
+        //上传文本信息时使用的MediaType
+        public static final MediaType MEDIA_TYPE_TEXT = MediaType.parse("text/plain; charset=utf-8");
+
+        //上传字节流或者File时，使用的MediaType
+        public static final MediaType MEDIA_TYPE_STREAM = MediaType.parse("application/octet-stream");
+
+        //上传Json字符串时使用的MediaType
+        public static final MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");
+
+        //上传xml字符串时使用的MediaType
+        public static final MediaType MEDIA_TYPE_XML = MediaType.parse("text/xml; charset=utf-8");
+
+        //上传peng图片时使用的MediaType
+        public static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
+
+        //上传jpeg图片时使用的MediaType
+        public static final MediaType MEDIA_TYPE_JPEG = MediaType.parse("image/jpeg");
+
+        //上传mp4 Video时使用的MediaType
+        public static final MediaType MEDIA_TYPE_VIDEO = MediaType.parse("video/mp4");
     }
 }

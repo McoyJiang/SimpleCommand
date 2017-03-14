@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="getImage"
         android:onClick="getImage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传视频"
+        android:onClick="uploadVideo"/>
 </LinearLayout>

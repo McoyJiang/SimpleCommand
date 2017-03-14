@@ -10,12 +10,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.danny_mcoy.simplecommad.cmd.network.UploadCommand;
+import com.danny_mcoy.simplecommad.entities.SimpleRequestBody;
 import com.danny_mcoy.simplecommad.extra.Params;
 import com.danny_mcoy.simplecommad.log.Logger;
 import com.danny_mcoy.simplecommad.receiver.AppResultReceiver;
 import com.danny_mcoy.simplecommad.utils.image.ImageLoader;
 
 import java.io.File;
+
+import okhttp3.MediaType;
 
 public class MainActivity extends AppCompatActivity implements AppResultReceiver.ResultListener {
 
@@ -43,6 +47,11 @@ public class MainActivity extends AppCompatActivity implements AppResultReceiver
     @Override
     public void onResultSuccess(Bundle resultData) {
         if (null != resultData) {
+            if (UploadCommand.UPLOAD_CMD.equals(
+                    resultData.getString(Params.CommandMessage.CMD_CODE))) {
+                Logger.e("JIANG", "上传成功");
+            }
+
             String body = resultData.getString(Params.CommandMessage.EXTRA_BODY);
 
             Logger.e("JIANG", " body is " + body);
@@ -77,5 +86,25 @@ public class MainActivity extends AppCompatActivity implements AppResultReceiver
         imageLoader.load("https://www.baidu.com/img/bd_logo1.png")
                 .withPlaceholder(R.mipmap.ic_launcher)
                 .into(image);
+    }
+
+    public void uploadVideo(View view) {
+        UploadCommand.Builder builder = new UploadCommand.Builder();
+
+        builder.domain("YOUR_DOMAIN")
+                .path("YOUT_PATH")
+                .contentType("YOUR_CONTENT_TYPE")
+                .mediaType(Params.Body.MEDIA_TYPE_VIDEO)
+                .file("YOUT_FILE_PATH")
+                .transferListener(new SimpleRequestBody.ProgressListener() {
+                    @Override
+                    public void onDataTransferred(long transferred, long contentLength) {
+
+                    }
+                });
+
+        UploadCommand uploadCommand = builder.build();
+
+        uploadCommand.start(this, new AppResultReceiver(new Handler(), this));
     }
 }
