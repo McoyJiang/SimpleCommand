@@ -29,10 +29,10 @@ SimpleCommand是一款轻量级框架。框架很小也很容易理解。使用�
 ### sample：
 是一个比较完整的案例演示module。通过添加simplecommand.aar包实现网络请求功能。具体的使用方法请继续往下看！
 
+<br>
+<br>
 
-<br>
-<br>
-# Contribute: 如果想为此框架添砖加瓦，请参照一下步骤
+## Contribute: 如果想为此框架添砖加瓦，请参照一下步骤
 - 1 Fork此工程，点击右上角的Fork按钮
 - 2 创建自己的开发分之 (git checkout -b my-new-feature)
 - 3 提交自己的代码修改 (git commit -am 'Add some feature')
