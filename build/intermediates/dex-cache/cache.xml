@@ -7,17 +7,8 @@
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="f8334e4e2cb15a4596bfcb1a5d603a7e2f56d913">
+        sha1="ec0f1d7c4a826927a3074b0277388759ff1661f4">
         <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/SimpleCommand-simplecommand-unspecified_e92ccea9ce13ab7ffd2bf342d3e66ef0f2c52bcd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/axing/Downloads/mac_develop/android-sdk-macosx-2/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_1376e5f5efebdcb6a7c66255f2438e9320b600de.jar" />
     </item>
     <item
         is-multidex="false"
@@ -27,15 +18,6 @@
         revision="24.0.2"
         sha1="f4f77eb62269c977c154765cd01587eda6488273">
         <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/picasso2-okhttp3-downloader-1.1.0_f1d61534a30b0ad3a977b862196bec58b7e55062.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/axing/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
-        <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/gson-2.8.0_a2d2a9d5f2286093742255adaf41d859cf4f0bf1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -63,6 +45,24 @@
         revision="24.0.2"
         sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
         <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_d55435977b3683e9406b73cec0982cfadf67ad7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/axing/Downloads/mac_develop/android-sdk-macosx-2/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_1376e5f5efebdcb6a7c66255f2438e9320b600de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/axing/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/axing/Downloads/work_dir/my_github/SimpleCommand/app/build/intermediates/pre-dexed/debug/gson-2.8.0_a2d2a9d5f2286093742255adaf41d859cf4f0bf1.jar" />
     </item>
     <item
         is-multidex="false"

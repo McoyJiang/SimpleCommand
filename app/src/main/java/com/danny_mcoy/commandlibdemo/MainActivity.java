@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.danny_mcoy.simplecommad.cmd.network.UploadCommand;
+import com.danny_mcoy.simplecommad.components.CircleTransform;
 import com.danny_mcoy.simplecommad.entities.SimpleRequestBody;
 import com.danny_mcoy.simplecommad.extra.Params;
 import com.danny_mcoy.simplecommad.log.Logger;
@@ -83,8 +84,11 @@ public class MainActivity extends AppCompatActivity implements AppResultReceiver
 
         ImageLoader imageLoader = new ImageLoader(this, listener, "jiang");
 
-        imageLoader.load("https://www.baidu.com/img/bd_logo1.png")
+        imageLoader
+                .load("http://tupian.qqjay.com/u/2013/1127/19_222949_14.jpg")
+                //.load(R.mipmap.ic_launcher)
                 .withPlaceholder(R.mipmap.ic_launcher)
+                .withTransformation(new CircleTransform())
                 .into(image);
     }
 
