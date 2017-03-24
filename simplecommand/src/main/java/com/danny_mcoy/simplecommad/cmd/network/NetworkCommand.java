@@ -13,6 +13,8 @@ import com.danny_mcoy.simplecommad.extra.CommandStatus;
 import com.danny_mcoy.simplecommad.extra.Params;
 import com.danny_mcoy.simplecommad.log.Logger;
 import com.danny_mcoy.simplecommad.storage.Storage;
+import com.danny_mcoy.simplecommad.utils.https.SimpleTrustManager;
+import com.danny_mcoy.simplecommad.utils.https.SimpleTrustStoreInitializer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -65,6 +67,15 @@ public abstract class NetworkCommand extends Command {
         OkHttpClient client = new OkHttpClient();
         client.newBuilder().connectTimeout(context.getResources().getInteger(R.integer.connection_timeout), TimeUnit.SECONDS);
         client.newBuilder().readTimeout(context.getResources().getInteger(R.integer.read_timeout), TimeUnit.SECONDS);
+
+        //添加Okhttp对Https请求的支持
+        if (SimpleTrustStoreInitializer.getSimpleTrustManager() != null) {
+            Logger.e("TAG", "https is integrated ^_^");
+            client.newBuilder().sslSocketFactory(SimpleTrustStoreInitializer
+                    .getSSLContext().getSocketFactory(), new SimpleTrustManager(SimpleTrustManager.getLocalKeyStore()));
+        } else {
+          Logger.e("TAG", "https is not supported for now!!!");
+        }
 
         try {
             if (isNetworkAvailable(context)) {

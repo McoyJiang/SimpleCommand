@@ -20,8 +20,6 @@ import com.danny_mcoy.simplecommad.utils.image.ImageLoader;
 
 import java.io.File;
 
-import okhttp3.MediaType;
-
 public class MainActivity extends AppCompatActivity implements AppResultReceiver.ResultListener {
 
     private TextView textView;
@@ -39,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements AppResultReceiver
 
     public void btnClick(View view) {
         HumourCommand apiCommand = new HumourCommand();
+
 
         AppResultReceiver receiver = new AppResultReceiver(new Handler(), this);
 

@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.danny_mcoy.simplecommad.R;
 import com.danny_mcoy.simplecommad.log.BuildConfig;
 import com.danny_mcoy.simplecommad.log.Logger;
+import com.danny_mcoy.simplecommad.utils.https.SimpleTrustStoreInitializer;
 import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.RequestCreator;
@@ -133,11 +134,10 @@ public class ImageLoader {
         client.newBuilder().connectTimeout(context.getResources().getInteger(R.integer.image_loader_connection_timeout), TimeUnit.SECONDS);
         client.newBuilder().readTimeout(context.getResources().getInteger(R.integer.image_loader_read_timeout), TimeUnit.SECONDS);
 
-        //TODO 后期需要添加Okhttp对Https请求的支持
-        /**client.setSslSocketFactory(new TrustStoreInteractor()
-         .getSSLContext(context)
-         .getSocketFactory()
-         );*/
+        //添加Okhttp对Https请求的支持
+        if (SimpleTrustStoreInitializer.getSimpleTrustManager() != null) {
+            client.newBuilder().sslSocketFactory(SimpleTrustStoreInitializer.getSSLContext().getSocketFactory());
+        }
 
         //File folder = createDefaultCacheDir(context, cachePath);
         //builder.downloader(new OkHttpDownloader(folder, calculateDiskCacheSize(folder)));
@@ -157,11 +157,10 @@ public class ImageLoader {
         client.newBuilder().connectTimeout(context.getResources().getInteger(R.integer.image_loader_connection_timeout), TimeUnit.SECONDS);
         client.newBuilder().readTimeout(context.getResources().getInteger(R.integer.image_loader_read_timeout), TimeUnit.SECONDS);
 
-        //TODO 后期需要添加Okhttp对Https请求的支持
-        /**client.setSslSocketFactory(new TrustStoreInteractor()
-         .getSSLContext(context)
-         .getSocketFactory()
-         );*/
+        //添加Okhttp对Https请求的支持
+        if (SimpleTrustStoreInitializer.getSimpleTrustManager() != null) {
+            client.newBuilder().sslSocketFactory(SimpleTrustStoreInitializer.getSSLContext().getSocketFactory());
+        }
 
         //File folder = createDefaultCacheDir(context, BIG_CACHE_PATH);
         //builder.downloader(withCache ? new OkHttpDownloader(folder, calculateDiskCacheSize(folder)) : new OkHttpDownloader(client));
